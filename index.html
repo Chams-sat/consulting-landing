@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Consulting Co.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script src="script.js" defer></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 lg:px-40 flex justify-center">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7edf3] dark:border-slate-800 px-4 sm:px-10 py-3 w-full max-w-[960px]">
+<div class="flex items-center gap-4 text-slate-900 dark:text-slate-50">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_330)">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_330">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Consulting Co.</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-slate-900 dark:text-slate-50 text-sm font-medium leading-normal" href="#services" data-i18n="services">Services</a>
+<a class="text-slate-900 dark:text-slate-50 text-sm font-medium leading-normal" href="#about" data-i18n="aboutUs">About Us</a>
+<a class="text-slate-900 dark:text-slate-50 text-sm font-medium leading-normal" href="#contact" data-i18n="contact">Contact</a>
+</div>
+<button class="btn-primary">
+<span class="truncate" data-i18n="getConsultation">Get a Free Consultation</span>
+</button>
+</div>
+<div class="md:hidden">
+<button class="text-slate-900 dark:text-slate-50">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="px-4 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="container mx-auto">
+<div class="hero-section" data-alt="Abstract blue and grey geometric shapes." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcqCUa7Uf1JW6t9aOfZt6ti7d0r1MxHb4gfWYXrK3zAC4Vu3z38FzhHaDdGypdeH9Smdlu_USmq3QS4UXpdqVzHMBpKGsaKtMItP4vdKYkx7vbyxmj2LR_eJ4bgXkLXVLUiv1u53M3TYjOEltPWYDY92RSM8g1FB2ux6ZCk0YAMBdN1TzcXxBK-x1-bhn2vBkXQr6V3WSX70PP7VBKdOQnPGJkwmVmCgnSll9uJSb8TaHzeH7BFKvLM_c6a50RQB_jnpTzjigUanY");'>
+<div class="flex flex-col gap-2 text-left max-w-2xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl" data-i18n="heroTitle">
+                                        Driving Growth Through Strategic Insights
+                                    </h1>
+<h2 class="text-white text-sm font-normal leading-normal sm:text-base" data-i18n="heroSubtitle">
+                                        We provide expert consulting services to help your business achieve its goals.
+                                    </h2>
+</div>
+<button class="btn-primary">
+<span class="truncate">Get a Free Consultation</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 lg:px-40 flex flex-1 justify-center py-5" id="services">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<h2 class="section-title px-4 pb-3 pt-5" data-i18n="ourExpertise">Our Expertise</h2>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4 p-4">
+<div class="service-card">
+<span class="material-symbols-outlined service-card-icon">business_center</span>
+<div class="flex flex-col gap-1">
+<h3 class="service-card-title" data-i18n="businessStrategy">Business Strategy</h3>
+<p class="service-card-description">Develop and implement effective strategies for sustainable growth.</p>
+</div>
+</div>
+<div class="service-card">
+<span class="material-symbols-outlined service-card-icon">monitoring</span>
+<div class="flex flex-col gap-1">
+<h3 class="service-card-title">Financial Advisory</h3>
+<p class="service-card-description">Navigate complex financial landscapes with our expert guidance.</p>
+</div>
+</div>
+<div class="service-card">
+<span class="material-symbols-outlined service-card-icon">search</span>
+<div class="flex flex-col gap-1">
+<h3 class="service-card-title">Market Research</h3>
+<p class="service-card-description">Gain valuable insights into your market and customers.</p>
+</div>
+</div>
+<div class="service-card">
+<span class="material-symbols-outlined service-card-icon">settings</span>
+<div class="flex flex-col gap-1">
+<h3 class="service-card-title">Operational Efficiency</h3>
+<p class="service-card-description">Optimize your processes to improve performance and reduce costs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="w-full flex flex-col items-center text-center p-4">
+<h2 class="section-title mb-4 text-center" data-i18n="clientsSay">What Our Clients Say</h2>
+<div class="relative w-full max-w-2xl">
+<div class="testimonial-card">
+<p class="testimonial-text mb-6">"Consulting Co. transformed our business. Their strategic insights and hands-on approach led to a 200% increase in revenue within the first year. We couldn't be happier."</p>
+<div class="flex flex-col items-center">
+<img alt="Innovate Corp Logo" class="h-12 w-auto mb-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBNmJ-wHszG5jhqwA5KBmVklLrKSdWf7vPUGQm-2uqsWfHXk9BRQvgZ-_bAZnNADeAG-Mvr6XNni8g73_8YAkQw8dm43PJctRJuQhkacXnk3WIiVQU7f6P-NpJlcVxwUOarMPN-_yrTkweDCCKNJfV80iHOYgx9o3dyIL7Vn4thZ7jv4k2_lC-j4K56N6tHc9HXmhTCelcQ4Gllhv5H1Kp2JxVEHKT5-TtZwLJymKp5tBblBy3Zk0lmN3BNL7-fMSgidkcFa9TT9c"/>
+<p class="font-semibold text-slate-900 dark:text-white">Jane Doe, CEO</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">Innovate Corp</p>
+</div>
+</div>
+<button class="testimonial-nav-button testimonial-nav-button-left">
+<span class="material-symbols-outlined testimonial-nav-icon">chevron_left</span>
+</button>
+<button class="testimonial-nav-button testimonial-nav-button-right">
+<span class="material-symbols-outlined testimonial-nav-icon">chevron_right</span>
+</button>
+</div>
+<div class="flex justify-center gap-2 mt-4">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+<span class="w-2 h-2 rounded-full bg-slate-300 dark:bg-slate-600"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 lg:px-40 flex flex-1 justify-center py-5" id="about">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="flex flex-col md:flex-row items-center gap-8 p-4">
+<div class="w-full md:w-1/2">
+<img class="rounded-xl object-cover w-full h-full" data-alt="A diverse group of professionals in a modern office setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW-aaVMVNHmebg-RJbh3Qm2MCwUqrwQHj22jc-wOy1q0f-kO-QEu70hSSwpWR_sdIwb49V9sEEis-liWdFDwI2FrNKSx98qONQxoMp1FVvAiWzvBXs7uoFcpWAQjlcXIMH-LCNB8nEnA9HU7xS36FlDW5iRcae-7dqEYxyqMSP8ABwv7ORiq84aH9menTlzI6entMDWusVMNQRJGfyPCODmd-N5sQ4Tc8X2_sQi9i15i4bkXprqvX5S8jXSXlLZuWqaWhJbMGMtgM"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col gap-4">
+<h2 class="section-title" data-i18n="ourStory">Our Story</h2>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal" data-i18n="ourStoryText">Founded on the principle of delivering measurable results, Consulting Co. has been empowering businesses for over a decade. Our team of seasoned experts brings a wealth of experience from various industries, united by a passion for problem-solving and a commitment to our clients' success. We believe in building long-term partnerships based on trust, transparency, and a deep understanding of your unique challenges.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 lg:px-40 flex flex-1 justify-center py-5" id="contact">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<div class="contact-form">
+<h2 class="section-title mb-6 text-center" data-i18n="getInTouch">Get in Touch</h2>
+<form class="space-y-6">
+<div>
+<label class="form-label" for="name" data-i18n="name">Name</label>
+<input class="form-input" id="name" name="name" type="text"/>
+</div>
+<div>
+<label class="form-label" for="email" data-i18n="email">Email</label>
+<input class="form-input" id="email" name="email" type="email"/>
+</div>
+<div>
+<label class="form-label" for="message" data-i18n="message">Message</label>
+<textarea class="form-input" id="message" name="message" rows="4"></textarea>
+</div>
+<div class="flex justify-end">
+<button class="btn-primary" type="submit">
+<span class="truncate" data-i18n="submit">Submit</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="px-4 lg:px-40 flex justify-center">
+<div class="max-w-[960px] w-full py-8 text-center">
+<p class="footer-text" data-i18n="copyright">© 2023 Consulting Co. All rights reserved.</p>
+<div class="flex justify-center gap-4 mt-4">
+<a class="footer-link" href="#">Facebook</a>
+<a class="footer-link" href="#">Twitter</a>
+<a class="footer-link" href="#">LinkedIn</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
