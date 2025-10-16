@@ -3,6 +3,15 @@
 ## Project Overview
 This is a modern, responsive landing page for a consulting company. The page showcases the company's services, testimonials, and contact information with a clean, professional design. It features interactive elements, animations, and bilingual support (English and Arabic).
 
+<p align="center">
+  <img src="/public/Screen Shot 2025-10-16 at 3.29.41 PM.png" alt="Consulting Co. Landing Page Screenshot" width="800">
+</p>
+
+## 🚀 Live Demo
+
+[View Live Demo](https://chams-sat.github.io/consulting-landing/)
+
+
 ## Features
 
 ### Responsive Design
@@ -63,34 +72,12 @@ Use the navigation arrows or indicator dots to browse through client testimonial
 ### Contact Form
 Fill out the contact form at the bottom of the page to send a message (form submission functionality would need to be implemented separately).
 
-## Customization
-
-### Modifying Content
-- Edit the text content in `index.html`
-- Update translations in both `script.js` and `i18n.js` files
-
-### Styling Changes
-- Modify the Tailwind configuration in the `<script id="tailwind-config">` section of `index.html`
-- Edit custom styles in `styles.css`
-
-### Adding New Features
-- Extend JavaScript functionality in `script.js`
-- Add new language support by extending the translations object in both JavaScript files
-
 ## Browser Support
 This landing page is compatible with all modern browsers including:
 - Chrome
 - Firefox
 - Safari
 - Edge
-
-## Showcase Ready
-This project is ready for your portfolio showcase! It demonstrates:
-- Modern web development practices
-- Responsive design implementation
-- Interactive UI elements
-- Multilingual support
-- Clean, maintainable code structure
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
